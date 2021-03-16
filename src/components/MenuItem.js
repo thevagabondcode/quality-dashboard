@@ -6,17 +6,17 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 
-// internal
-import { useStyles } from "../styles";
-
 // external
 import clsx from "clsx";
 import { Link, useLocation } from "react-router-dom";
 
+// internal
+import { useStyles } from "../styles";
+
 const MenuItem = ({ label, icon, activeIcon, path }) => {
-  const classes = useStyles();
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
   const location = useLocation();
+  const classes = useStyles();
 
   useEffect(() => {
     if (path === "/sign-out") {

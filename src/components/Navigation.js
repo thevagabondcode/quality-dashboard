@@ -1,25 +1,27 @@
 import React, { useState } from "react";
 
-// internal
-import MenuItem from "./MenuItem";
-import { useStyles } from "../styles";
-import routes from "../routes";
-
-// assets
-import Logo1 from "../assets/logo1.svg";
-import Logo2 from "../assets/logo2.svg";
-
 // @material-ui
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import IconButton from "@material-ui/core/IconButton";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import MenuIcon from "@material-ui/icons/Menu";
+
+// assets
+import Logo1 from "../assets/logo1.svg";
+import Logo2 from "../assets/logo2.svg";
+
+// external
 import clsx from "clsx";
 
+// internal
+import MenuItem from "./MenuItem";
+import routes from "../routes";
+import { useStyles } from "../styles";
+
 const Navigation = () => {
-  const classes = useStyles();
   const [open, setOpen] = useState(true);
+  const classes = useStyles();
 
   const toggleNavigation = () => {
     setOpen(!open);
