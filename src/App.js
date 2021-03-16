@@ -1,24 +1,29 @@
-import React from 'react'
-import logo from './logo.svg'
+import React from "react";
+import Navigation from "./components/Navigation";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import routes from "./routes";
+import { useStyles } from "./styles";
 
 const App = () => {
+  const classes = useStyles();
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '100vh',
-      fontFamily: 'roboto'
-    }}>
-      <img src={logo} alt="Quality Logo"/>
-      <h1 style={{
-        color: '#6EC177',
-        margin: 0
-      }}>Wah Gwan, Soon Come</h1>
-      <p>What's Up, Coming Soon</p>
+    <div className={classes.appRoot}>
+      <Router>
+        <Navigation />
+        <div>
+          <Switch>
+            {routes.map((route, index) => {
+              return (
+                <Route exact key={index} path={route.path}>
+                  {route.component}
+                </Route>
+              );
+            })}
+          </Switch>
+        </div>
+      </Router>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

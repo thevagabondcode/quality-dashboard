@@ -1,8 +1,6 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders coming soon text', () => {
+test("renders app", () => {
   render(<App />);
-  const h1Element = screen.getByText(/Wah Gwan, Soon Come/i);
-  expect(h1Element).toBeInTheDocument();
 });

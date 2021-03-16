@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="217.545" height="218" viewBox="0 0 217.545 218">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        filter: url(#sign-out);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6ec177"/>
+      <stop offset="1" stop-color="#2ca43c"/>
+    </linearGradient>
+    <filter id="sign-out" x="0" y="0" width="217.545" height="218" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="sign-out-2" data-name="sign-out" class="cls-1" d="M101,1a99.975,99.975,0,0,1,99.545,90.909H119.182V64.636a9.088,9.088,0,0,0-15.518-6.427L67.3,94.573a9.081,9.081,0,0,0,0,12.855l36.364,36.364a9.088,9.088,0,0,0,15.518-6.427V110.091h81.364A99.981,99.981,0,1,1,101,1Z" transform="translate(8 5)"/>
+  </g>
+</svg>
