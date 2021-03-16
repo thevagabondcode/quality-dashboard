@@ -24,7 +24,7 @@ const MenuItem = ({ label, icon, activeIcon, path }) => {
       return;
     }
     setActive(location.pathname === path);
-  }, [location]);
+  }, [location, path]);
 
   return (
     <ListItem
