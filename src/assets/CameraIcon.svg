@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g id="Group_1048" data-name="Group 1048" transform="translate(-0.185 0.102)">
+    <path id="Path_11734" data-name="Path 11734" d="M100,0A100,100,0,1,1,0,100,100,100,0,0,1,100,0Z" transform="translate(0.185 -0.102)" fill="#6ec177"/>
+    <g id="_112-photo-camera-1" data-name="112-photo-camera-1" transform="translate(57.238 64.082)">
+      <g id="Group_1045" data-name="Group 1045" transform="translate(0 0)">
+        <g id="Group_1044" data-name="Group 1044" transform="translate(0 0)">
+          <path id="Path_1470" data-name="Path 1470" d="M83.951,11.852H66.333L62.521,1.9A2.966,2.966,0,0,0,59.753,0H29.136a2.963,2.963,0,0,0-2.766,1.9l-3.814,9.95H4.938A4.944,4.944,0,0,0,0,16.79V66.173a4.944,4.944,0,0,0,4.938,4.938H83.951a4.944,4.944,0,0,0,4.938-4.938V16.79A4.944,4.944,0,0,0,83.951,11.852Zm-.988,53.333H5.926V17.778H24.593a2.963,2.963,0,0,0,2.766-1.9l3.814-9.95H57.717l3.813,9.95a2.964,2.964,0,0,0,2.766,1.9H82.963V65.185Z" transform="translate(0 0)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_1047" data-name="Group 1047" transform="translate(23.605 18.271)">
+        <g id="Group_1046" data-name="Group 1046" transform="translate(0 0)">
+          <path id="Path_1471" data-name="Path 1471" d="M20.84,0a20.84,20.84,0,1,0,20.84,20.84A20.863,20.863,0,0,0,20.84,0Zm0,35.754A14.914,14.914,0,1,1,35.753,20.84,14.93,14.93,0,0,1,20.84,35.754Z" transform="translate(0 0)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

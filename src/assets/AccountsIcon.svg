@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="218" height="188" viewBox="0 0 218 188">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #c7c8d2;
+        stroke-width: 14px;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: #c7c8d2;
+      }
+
+      .cls-7 {
+        filter: url(#Ellipse_1);
+      }
+
+      .cls-8 {
+        filter: url(#Rectangle_6);
+      }
+
+      .cls-9 {
+        filter: url(#Path_11741);
+      }
+    </style>
+    <filter id="Path_11741" x="0" y="0" width="180" height="141" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6" x="39" y="46" width="179" height="142" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_1" x="92.488" y="77.073" width="75.805" height="75.805" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="accounts-icon-active" transform="translate(-65 -315)">
+    <g class="cls-9" transform="matrix(1, 0, 0, 1, 65, 315)">
+      <g id="Path_11741-2" data-name="Path 11741" class="cls-1" transform="translate(9 6)">
+        <path class="cls-4" d="M3,0H159a3,3,0,0,1,3,3V120a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3V3A3,3,0,0,1,3,0Z"/>
+        <path class="cls-5" d="M 14 14 L 14 109 L 148 109 L 148 14 L 14 14 M 3 0 L 159 0 C 160.6568603515625 0 162 1.3431396484375 162 3 L 162 120 C 162 121.6568603515625 160.6568603515625 123 159 123 L 3 123 C 1.3431396484375 123 0 121.6568603515625 0 120 L 0 3 C 0 1.3431396484375 1.3431396484375 0 3 0 Z"/>
+      </g>
+    </g>
+    <g class="cls-8" transform="matrix(1, 0, 0, 1, 65, 315)">
+      <g id="Rectangle_6-2" data-name="Rectangle 6" class="cls-2" transform="translate(48 52)">
+        <rect class="cls-4" width="161" height="124" rx="3"/>
+        <rect class="cls-6" x="7" y="7" width="147" height="110" rx="4"/>
+      </g>
+    </g>
+    <g class="cls-7" transform="matrix(1, 0, 0, 1, 65, 315)">
+      <g id="Ellipse_1-2" data-name="Ellipse 1" class="cls-3" transform="translate(101.49 83.07)">
+        <circle class="cls-4" cx="28.903" cy="28.903" r="28.903"/>
+        <circle class="cls-6" cx="28.903" cy="28.903" r="21.903"/>
+      </g>
+    </g>
+  </g>
+</svg>
