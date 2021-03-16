@@ -57,7 +57,7 @@ const Navigation = () => {
         <List className={classes.navigationList}>
           {routes.map((route, index) => {
             return (
-              <React.Fragment>
+              <React.Fragment key={index}>
                 {route.path === "/sign-out" && (
                   <div className={classes.navigationSpacer}></div>
                 )}
