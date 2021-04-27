@@ -4,6 +4,17 @@ export const useStyles = makeStyles((theme) => ({
   appRoot: {
     display: "flex",
   },
+  appBar: {
+    background: "#6EC177",
+    [theme.breakpoints.up("sm")]: {
+      display: "none",
+    },
+  },
+  appBarSpacer: {
+    [theme.breakpoints.down("xs")]: {
+      ...theme.mixins.toolbar,
+    },
+  },
   navigationLogo: {
     width: "50%",
     cursor: "pointer",
