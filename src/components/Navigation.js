@@ -6,6 +6,13 @@ import List from "@material-ui/core/List";
 import IconButton from "@material-ui/core/IconButton";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import MenuIcon from "@material-ui/icons/Menu";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@material-ui/core";
 
 // assets
 import Logo1 from "../assets/logo1.svg";
@@ -19,16 +26,40 @@ import MenuItem from "./MenuItem";
 import routes from "../routes";
 import { useStyles } from "../styles";
 
+
 const Navigation = () => {
   const [open, setOpen] = useState(true);
   const classes = useStyles();
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("xs"));
 
   const toggleNavigation = () => {
     setOpen(!open);
   };
 
+  const closeNavigation = () => {
+    if (matches) {
+      setOpen(false);
+    }
+  };
+
   return (
     <div>
+      <AppBar className={classes.appBar}>
+        <Toolbar>
+          <IconButton
+            onClick={toggleNavigation}
+            edge="start"
+            color="inherit"
+            aria-label="Menu"
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography color="inherit" component="h1" variant="h6">
+            Quality
+          </Typography>
+        </Toolbar>
+      </AppBar>
       <Drawer
         classes={{
           paper: clsx(
@@ -36,7 +67,7 @@ const Navigation = () => {
             !open && classes.navigationDrawerCollapse
           ),
         }}
-        variant="permanent"
+        variant={matches ? "temporary" : "permanent"}
         open={open}
       >
         <div
@@ -68,6 +99,7 @@ const Navigation = () => {
                   icon={route.icon}
                   activeIcon={route.activeIcon}
                   path={route.path}
+                  onClick={closeNavigation}
                 />
               </React.Fragment>
             );

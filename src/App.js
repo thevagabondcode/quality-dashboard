@@ -11,6 +11,7 @@ const App = () => {
       <Router>
         <Navigation />
         <div>
+          <div className={classes.appBarSpacer}></div>
           <Switch>
             {routes.map((route, index) => {
               return (
